@@ -1,0 +1,59 @@
+---
+title: "Extracao"
+author: "Lucas Barbosa Defanti"
+date: "2024-03-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# instalar pacotes
+# install.packages("remotes")
+# install.packages("tidyverse")
+# install.packages("dplyr")
+# install.packages("devtools")
+# devtools::install_github('danicat/read.dbc')
+# devtools::install_github('rfsaldanha/microdatasus')
+library(dplyr)
+library(tidyverse)
+library(remotes)
+library(microdatasus)
+```
+
+# Extraindo
+```{r}
+dados <- microdatasus::fetch_datasus(
+  year_start = 2010,
+  year_end = 2024,
+  uf = "SP",
+  information_system = "SIM-DO")
+```
+
+# Processamento
+```{r}
+df <- microdatasus::process_sim(dados, municipality_data = TRUE)
+```
+
+# Head
+```{r}
+head(df)
+```
+
+
+# Subsets
+```{r}
+df %>%
+  filter(CAUSABAS %in% c(
+    "A19",
+    "A199",
+    "A37",
+    "A17",
+    "B05",
+    "B26"
+  ))
+```
+
+# Export
+```{r}
+data.table::fwrite(df, "datasus.csv")
+```
