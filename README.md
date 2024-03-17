@@ -1,5 +1,5 @@
 # PI
- Projeto Integrador
+ Projeto Integrador 6 (2024) feito por alunos da FATEC Ipiranga como Trabalho de Conclusão de curso.
 
 ## Artigo
 
