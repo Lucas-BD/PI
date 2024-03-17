@@ -30,7 +30,7 @@ bin-release/
 *.out
 *.nav
 *.snm
-*.user
+*.Rproj.user
 *.RData
 *.Rhistory
 *.Rproj
