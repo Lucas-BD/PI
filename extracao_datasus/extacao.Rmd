@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # install.packages("tidyverse")
 # install.packages("dplyr")
 # install.packages("devtools")
+# install.packages("Rcpp")
 # devtools::install_github('danicat/read.dbc')
 # devtools::install_github('rfsaldanha/microdatasus')
 library(dplyr)
@@ -32,6 +33,7 @@ dados <- microdatasus::fetch_datasus(
 # Processamento
 ```{r}
 df <- microdatasus::process_sim(dados, municipality_data = TRUE)
+rm(dados)
 ```
 
 # Head
@@ -56,4 +58,5 @@ df %>%
 # Export
 ```{r}
 data.table::fwrite(df, "datasus.csv")
+rm(df)
 ```
