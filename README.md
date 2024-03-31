@@ -4,12 +4,19 @@
  Integrantes: 
 
  Breno Juan da Fonseca Silva
+ 
  Dayana Ingrid Carata Choque
+ 
  Gabriel Leão Frigo
+ 
  Jackelyne Alicia Miranda Ramos
+ 
  Lucas Barbosa Defanti
+ 
  Lucas Matos Norbertino dos Santos
+ 
  Matheus Henrique Biano Neres
+ 
  Michelle Mieko Coelho Koga
 
 ## Artigo
