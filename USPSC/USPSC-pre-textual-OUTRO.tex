@@ -1,12 +1,12 @@
 %% USPSC-pre-textual-OUTRO.tex
 %% Camandos para definição do tipo de documento (tese ou dissertação), área de concentração, opção, preâmbulo, titulação 
 %% referentes ao Programa de Pós-Graduação o IQSC
-\instituicao{Nome da Unidade USP, Universidade de S\~ao Paulo}
-\unidade{NOME DA UNIDADE USP}
-\unidademin{Nome da Unidade USP}
-\universidademin{Universidade de S\~ao Paulo}
+\instituicao{Pastor En\'eas Tognini, Faculdade De Tecnologia}
+\unidade{Pastor En\'eas Tognini}
+\unidademin{Faculdade De Tecnologia}
+\universidademin{Faculdade De Tecnologia}
 
-\notafolharosto{Vers\~ao original}
+%\notafolharosto{Vers\~ao original}
 %Para versão original em inglês, comente o comando/declaração 
 %     acima(inclua % antes do comando acima) e tire a % do 
 %     comando/declaração abaixo no idioma do texto
@@ -21,28 +21,62 @@
 % ---
 % dados complementares para CAPA e FOLHA DE ROSTO
 % ---
-\universidade{UNIVERSIDADE DE S\~AO PAULO}
+\universidade{Faculdade De Tecnologia}
 \titulo{Modelo para teses e disserta\c{c}\~oes em \LaTeX\ utilizando o Pacote USPSC}
 \titleabstract{Model for thesis and dissertations in \LaTeX\ using the USPSC Package}
 \tituloresumo{Modelo para teses e disserta\c{c}\~oes em \LaTeX\ utilizando o Pacote USPSC}
-\autor{Jos\'e da Silva}
-\autorficha{Silva, Jos\'e da}
-\autorabr{SILVA, J.}
+\autor{
+	Breno Juan da Fonseca Silva 
+	\and \\
+	Dayana Ingrid Carata Choque
+	\and \\
+	Gabriel Le\~ao Frigo
+	\and \\
+	Jackelyne Alicia Miranda Ramos
+	\and \\
+	Lucas Barbosa Defanti
+	\and \\
+	Lucas Matos Norbertino dos Santos
+	\and \\
+	Matheus Henrique Biano Neres
+	\and \\
+	Michelle Mieko Coelho Koga
+	}
+\autorficha{
+	Silva, Breno Juan da Fonseca
+	\and \\
+	Choque, Dayana Ingrid Carata
+	\and \\
+	Frigo, 	Gabriel Le\~ao
+	\and \\
+	Ramos, Jackelyne Alicia Miranda
+	\and \\
+	Defanti, Lucas Barbosa
+	\and \\
+	Santos, Lucas Matos Norbertino dos
+	\and \\
+	Neres, Matheus Henrique Biano
+	\and \\
+	Koga, Michelle Mieko Coelho
+	}
+\autorabr{
+	SILVA, B.J. da Fonseca \textit{et al.}
+}
 
 \cutter{S856m}
 % Para gerar a ficha catalográfica sem o Código Cutter, basta 
 % incluir uma % na linha acima e tirar a % da linha abaixo
 %\cutter{ }
 
-\local{S\~ao Carlos}
-\data{2023}
+\local{S\~ao Paulo - SP}
+\data{2024}
 % Quando for Orientador, basta incluir uma % antes do comando abaixo
-\renewcommand{\orientadorname}{Orientadora:}
+\renewcommand{\orientadorname}{Orientador:}
 % Quando for Coorientadora, basta tirar a % utilizar o comando abaixo
 %\newcommand{\coorientadorname}{Coorientador:}
-\orientador{Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
-\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues}
-\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient}
+\orientador{Prof. Bruno Monserrat Perillo.}
+\orientadorcorpoficha{orientador Bruno Monserrat Perillo.}
+\orientadorficha{Perillo, Bruno Monserrat, orient}
 %Se houver co-orientador, inclua % antes das duas linhas (antes dos comandos \orientadorcorpoficha e \orientadorficha) 
 %          e tire a % antes dos 3 comandos abaixo
 %\coorientador{Prof. Dr. Jo\~ao Alves Serqueira}
@@ -57,13 +91,13 @@
 % TCCOUTRO ==========================================================================
 \ifthenelse{\equal{#1}{DOUTRO}}{
     \area{Nome da \'Area}
-	\tipotrabalho{Tese (Doutorado)}
-	\tipotrabalhoabs{Thesis (Doctor)}
+	\tipotrabalho{Relat\'orio T\'ecnico-Cient\'ifico}
+	\tipotrabalhoabs{Technical Report}
 	%\opcao{Nome da Opção}
     % O preambulo deve conter o tipo do trabalho, o objetivo, 
 	% o nome da instituição e a área de concentração 
-	\preambulo{Tese apresentada ao Programa de P\'os-Gradua\c{c}\~ao em XXXXXXX da Unidade USP, Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Doutor em YYYYYYYYYYY.}
-	\notaficha{Tese (Doutorado - Programa de P\'os-Gradua\c{c}\~ao em XXXXXXX e \'Area de Concentra\c{c}\~ao em ~\imprimirarea)}
+	\preambulo{Relatório Técnico-Científico apresentado na disciplina de Projeto Integrador para o curso de Big Data para Negócios da Faculdade de Tecnologia Ipiranga “Pastor Enéas Tognini” (FATEC).}
+	\notaficha{Relatório Técnico-Científico apresentado na disciplina de Projeto Integrador para o curso de Big Data para Negócios da Faculdade de Tecnologia Ipiranga “Pastor Enéas Tognini” (FATEC).}
     }{
 % MOUTRO ===========================================================================
 \ifthenelse{\equal{#1}{MOUTRO}}{
@@ -73,17 +107,17 @@
 	%\opcao{Nome da Opção}
     % O preambulo deve conter o tipo do trabalho, o objetivo, 
 	% o nome da instituição e a área de concentração 
-	\preambulo{Disserta\c{c}\~ao apresentada ao Programa de P\'os-Gradua\c{c}\~ao em XXXXXXX da Unidade USP, Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Mestre em YYYYYYYYYYY.}
-	\notaficha{Disserta\c{c}\~ao (Mestrado - Programa de P\'os-Gradua\c{c}\~ao em XXXXXXX e \'Area de Concentra\c{c}\~ao em ~\imprimirarea)}
+	\preambulo{Relatório Técnico-Científico apresentado na disciplina de Projeto Integrador para o curso de Big Data para Negócios da Faculdade de Tecnologia Ipiranga “Pastor Enéas Tognini” (FATEC).}
+	\notaficha{Relatório Técnico-Científico apresentado na disciplina de Projeto Integrador para o curso de Big Data para Negócios da Faculdade de Tecnologia Ipiranga “Pastor Enéas Tognini” (FATEC).}
     }{
 % Outros
-    \tipotrabalho{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado)}
-	\tipotrabalhoabs{Dissertation/Thesis (Master/Doctor)}
-	\area{Nome da \'Area}
-	\opcao{Nome da Op\c{c}\~ao}
+    \tipotrabalho{Relat\'orio T\'ecnico-Cient\'ifico}
+	\tipotrabalhoabs{Technical Report}
+	%\area{Nome da \'Area}
+	%\opcao{Nome da Op\c{c}\~ao}
 	% O preambulo deve conter o tipo do trabalho, o objetivo, 
 	% o nome da instituição e a área de concentração 
-	\preambulo{Disserta\c{c}\~ao/Tese apresentada ao Programa de P\'os-Gradua\c{c}\~ao em XXXXXXX da Unidade USP, Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Mestre/Doutor em YYYYYYYYYYY.}
-	\notaficha{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado - Programa de P\'os-Gradua\c{c}\~ao em XXXXXXX e \'Area de Concentra\c{c}\~ao em ~\imprimirarea)}
+	\preambulo{Relatório Técnico-Científico apresentado na disciplina de Projeto Integrador para o curso de Big Data para Negócios da Faculdade de Tecnologia Ipiranga “Pastor Enéas Tognini” (FATEC).}
+	\notaficha{Relatório Técnico-Científico apresentado na disciplina de Projeto Integrador para o curso de Big Data para Negócios da Faculdade de Tecnologia Ipiranga “Pastor Enéas Tognini” (FATEC).}
     }}}
 				
