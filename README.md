@@ -21,7 +21,7 @@
 
 ## Artigo
 
-A pasta `modelo_artigo` possui os arquivos `.tex` e `.bib` para a compilação.
+A pasta `USPSC` possui os arquivos `.tex` e `.bib` para a compilação, no momento o `.tex` principal é o `USPSC-modelo.tex`
 
 ## Extração
 
