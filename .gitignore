@@ -2,7 +2,7 @@
 *.air
 *.ipa
 *.apk
-*.pdf
+#*.pdf
 *.aux
 *.brf
 *.fdb_latexmk
@@ -25,3 +25,4 @@
 *.xlsx
 *.csv
 .Rproj.user
+*.loq
