@@ -7,14 +7,23 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-# instalar pacotes
-# install.packages("remotes")
-# install.packages("tidyverse")
-# install.packages("dplyr")
-# install.packages("devtools")
-# install.packages("Rcpp")
-# devtools::install_github('danicat/read.dbc')
-# devtools::install_github('rfsaldanha/microdatasus')
+if (!"pacman" %in% rownames(installed.packages())){
+  install.packages("pacman")
+}
+pacman::p_load("remotes", 
+               "tidyverse", 
+               "dplyr",
+               "devtools",
+               "Rcpp")
+
+if (!"read.dbc" %in% rownames(installed.packages())){
+  devtools::install_github('danicat/read.dbc')
+}
+
+if (!"microdatasus" %in% rownames(installed.packages())) {
+  devtools::install_github('rfsaldanha/microdatasus')
+}
+
 library(dplyr)
 library(tidyverse)
 library(remotes)
@@ -22,7 +31,7 @@ library(microdatasus)
 ```
 
 # Extraindo
-```{r}
+```{r extact}
 dados <- microdatasus::fetch_datasus(
   year_start = 2010,
   year_end = 2024,
@@ -31,34 +40,18 @@ dados <- microdatasus::fetch_datasus(
 ```
 
 # Processamento
-```{r}
+```{r process}
 df <- microdatasus::process_sim(dados, municipality_data = TRUE)
 rm(dados)
 ```
 
 # Head
-```{r}
+```{r peek}
 head(df)
 ```
 
-
-# Subsets
-```{r}
-df %>%
-  filter(CAUSABAS %in% c(
-    "A19",
-    "A199",
-    "A37",
-    "A17",
-    "B05",
-    "B26"
-  ))
-```
-
 # Export
-```{r}
+```{r export}
 data.table::fwrite(df, "datasus.csv")
 rm(df)
 ```
-
-# Teste
