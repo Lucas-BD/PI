@@ -52,6 +52,6 @@ head(df)
 
 # Export
 ```{r export}
-data.table::fwrite(df, "datasus.csv")
+data.table::fwrite(df, "datasus.csv", encoding = "UTF-8")
 rm(df)
 ```
