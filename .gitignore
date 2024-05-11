@@ -22,7 +22,6 @@
 *.snm
 *.RData
 *.Rhistory
-*.xlsx
 *.csv
 .Rproj.user
 *.loq
