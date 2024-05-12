@@ -30,3 +30,7 @@ A pasta `extracao_datasus` possui um arquivo `.rmd` com o código exemplo/base p
 ## Python
 
 A pasta `codigos_python` possui arquivos `.ipynb` com códigos iniciais exemplo/base para a construção do processo de análise e predição.
+
+## Power BI
+
+Ao abrir o dash preencha o parâmetro `dataPath` com o caminho da pasta `extracao_datasus` (solução para caminhos relativos).
