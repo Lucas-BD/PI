@@ -13,7 +13,7 @@ O objetivo do presente relatório é apresentar uma solução simples que não d
 
 \section{Fundamentação Teórica}
 
-O monitoramento de métricas para a saúde publica se mostra eficaz na produção de resultados, \citeonline{soares2019melhoria} realizou um estudo em 60 cidades, participantes do projeto Dados para a Saúde, que busca melhorar o diagnóstico de causas de morte por meio da cooperação de equipes de vigilância de óbitos. As cidades participantes do projeto Dados para a Saúde apresentaram melhores resultados após a investigação das CEI, possibilitando uma análise detalhada da reclassificação para causas específicas, considerando sexo e faixas etárias.
+O monitoramento de métricas para a saúde publica se mostra eficaz na produção de resultados, \citeonline{soares2019melhoria} realizou um estudo em 60 cidades, participantes do projeto Dados para a Saúde, que busca melhorar o diagnóstico de causas de morte por meio da cooperação de equipes de vigilância de óbitos. As cidades participantes do projeto Dados para a Saúde apresentaram melhores resultados após a investigação das Causas Externas Inespecíficas de Mortalidade (CEI), possibilitando uma análise detalhada da reclassificação para causas específicas, considerando sexo e faixas etárias.
 
 Os resultados apresentados por \citeonline{soares2019melhoria} mostram a importância do monitoramento em conjunto, adicionalmente destaca a melhoria contínua nos sistemas relevantes, como o SIM-DO.
 
@@ -36,7 +36,11 @@ Na fase de coleta e preparação de dados, utilizamos técnicas de limpeza e int
 
 \section{Metodologia}
 
-A extração será feita por meio dos \textit{softwares} \textit{R} e \textit{RStudio}, onde foram utilizadas as funções da biblioteca desenvolvidas por \citeonline{saldanha2019microdatasus}, esta biblioteca foi criada para facilitar a extração dos dados disponibilizados pelo SUS, incluindo o sistema SIM, adicionalmente são disponíveis funções de pré processamento que tratam os valores presentes nas tabelas e, a partir dos dados extraídos, incluí informações de municipalidade em um formato utilizável pelas ferramentas de mapas presentes na maioria dos \textit{softwares} de visualização, toda a documentação e instrução de uso são disponíveis pela ferramenta de ajuda (documentação) da própria biblioteca.
+A extração será feita por meio dos \textit{softwares} \textit{R} e \textit{RStudio}, onde foram utilizadas as funções da biblioteca desenvolvidas por \citeonline{saldanha2019microdatasus}, esta biblioteca foi criada para facilitar a extração dos dados disponibilizados pelo SUS, incluindo o sistema SIM, adicionalmente são disponíveis funções de pré processamento que tratam os valores presentes nas tabelas e, a partir dos dados extraídos, incluí informações de municipalidade, toda a documentação e instrução de uso são disponíveis pela ferramenta de ajuda da própria biblioteca.
 
-De forma parcial a exploração dos dados foi feita por meio da linguagem \textit{Python} em um arquivo no formato \textit{Jupyter Notebook} de forma colaborativa por meio de versionamento pelo \textit{GitHub}, que possibilita a colaboração independente das ferramentas de preferência de cada colaborador.
+Para a visualização dos resultados em um \textit{dashboard} os nomes dos estados e municípios foram retirados da tabela de Códigos dos municípios disponibilizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE).
+
+Adicionalmente foi elaborada uma tabela para mapear as causas de morte evitáveis com base na lista proposta por \citeonline{malta2007causas}, devido a limitação no escopo do trabalho as Causas mal-definidas e Acidentes de trânsito/transporte não foram incluídas.
+
+De forma parcial a exploração dos dados foi feita por meio da linguagem \textit{Python} em um arquivo no formato \textit{Jupyter Notebook} de forma colaborativa por meio de versionamento pelo \textit{GitHub}, que possibilita a colaboração independente das ferramentas de preferência de cada colaborador. Após o carregamento dos dados na ferramenta Power BI um \textit{dashboard} foi criado para auxiliar a exploração dos dados e apresentação dos resultados.
 
