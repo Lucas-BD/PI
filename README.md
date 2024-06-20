@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/773143943.svg)](https://zenodo.org/doi/10.5281/zenodo.11526925)
 # PI
  Projeto Integrador 6 (2024) feito por alunos da FATEC Ipiranga como Trabalho de Conclusão de curso.
 
